@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Button } from "@/components/ui/button"
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -73,12 +74,7 @@ export default function LoginPage() {
               required
             />
           </div>
-          <button
-            onClick={onSubmitLogin}
-            className="w-full py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            Login
-          </button>
+          <Button onClick={onSubmitLogin} variant="outline" className="w-full border-blue-700 hover:bg-blue-700 hover:text-white">Login</Button>
         </form>
         <Link href="/register" className="text-black text-center">
           Visit register page
