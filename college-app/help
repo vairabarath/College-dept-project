@@ -1,0 +1,7 @@
+<section>
+  <h2 className="text-3xl font-semibold mb-6">Our Department Status</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <NumberCounter target="{1200}" label="Students" />
+    <NumberCounter target="{15}" label="Staff" />
+  </div>
+</section>

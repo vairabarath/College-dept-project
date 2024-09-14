@@ -1,9 +1,8 @@
 "use client";
 import { useState } from "react";
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import toast from "react-hot-toast";
 
 export default function LoginPage() {
@@ -43,8 +42,7 @@ export default function LoginPage() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
-            >
+              className="block text-sm font-medium text-gray-700">
               Email
             </label>
             <input
@@ -60,8 +58,7 @@ export default function LoginPage() {
           <div>
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
-            >
+              className="block text-sm font-medium text-gray-700">
               Password
             </label>
             <input
@@ -74,11 +71,13 @@ export default function LoginPage() {
               required
             />
           </div>
-          <Button onClick={onSubmitLogin} variant="outline" className="w-full border-blue-700 hover:bg-blue-700 hover:text-white">Login</Button>
+          <Button
+            onClick={onSubmitLogin}
+            variant="outline"
+            className="w-full bg-blue-700 text-white hover: border-blue-700 ">
+            Login
+          </Button>
         </form>
-        <Link href="/register" className="text-black text-center">
-          Visit register page
-        </Link>
       </div>
     </div>
   );
